@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="main"
+            type="won.young.oop.MainActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+    
+        <Button
+            android:id="@+id/randomCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="231dp"
+            android:text="무작위 통화"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    
+        <Button
+            android:id="@+id/friendCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="100dp"
+            android:text="친구 통화"
+            app:layout_constraintStart_toStartOf="@+id/randomCallButton"
+            app:layout_constraintTop_toBottomOf="@+id/randomCallButton" />
+    
+        <Button
+            android:id="@+id/roomCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:text="방에 입장"
+            app:layout_constraintStart_toStartOf="@+id/friendCallButton"
+            app:layout_constraintTop_toBottomOf="@+id/friendCallButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
